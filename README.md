@@ -1,15 +1,12 @@
-# HFU LaTeX Vorlage
+# IHK LaTeX Vorlage
 
-Diese Vorlage wurde privat erstellt und ist **nicht** offiziell. Das bedeutet das es Fehler geben kann. 
-Es ist immer die aufgabe vom Verfasser der Arbeit zu überprüfen das die Formalien stimmen.
+Diese Vorlage wurde privat erstellt und ist **nicht** offiziell. Das bedeutet, dass es Fehler geben kann.
+Es ist immer die Aufgabe vom Verfasser der Arbeit zu überprüfen, das die Formalien stimmen.
 
-Bei der Vorlage wurde an den Richtlinien in 
-[diesem Dokument](https://www.hs-furtwangen.de/fileadmin/user_upload/fak_IN/Dokumente/03_Formulare/thesis/Richtlinie_fuer_die_Erstellung_wissenschaftlicher_Arbeiten_ab2023.pdf)
-orientiert.
+Bei der Vorlage wurde an keinerlei Richtlinien orientiert. Die einzige Vorlage war eine Word-Datei und was ich schön find.
 
 ## Contibuting
 
-Wenn du Fehler in der Vorlage findest, bitte öffne einen Issue mit Screenshot des Dokuments und / oder Code zum Reproduzieren. 
-Zudem sollte ein Verweis auf die Richtlinie in einem Dokument der HFU sein.
+Wenn du Fehler in der Vorlage findest, bitte öffne ein Issue mit Screenshot des Dokuments und / oder Code zum Reproduzieren.
 
-Wenn du eine Lösung für einen Issue hast, weise dir ihn bitte zu und stelle eine Pull Request.
+Wenn du eine Lösung für ein Issue hast, weise dir ihn bitte zu und stelle eine Pull Request.

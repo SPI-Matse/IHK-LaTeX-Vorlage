@@ -23,22 +23,22 @@
 % DOCUMENT VARIABLES
 % ##################################################
 % Personal data
-\newcommand{\docAuthor}{NAME}
-\newcommand{\docMatriculationNumber}{MATRIKELNUMMER}
-\newcommand{\docStudyProgram}{Informatik S+I}
-\newcommand{\docStreetName}{STRASSE, HAUSNUMMER}
-\newcommand{\docPostalCode}{PLZ}
-\newcommand{\docCity}{ORT}
-\newcommand{\docEmail}{EMAIL} % TOCHANGE email address
+\newcommand{\docAuthor}{Dominik Meurer}
+\newcommand{\docMatriculationNumber}{169 52137}
+\newcommand{\docEmail}{dom.meurer@gmx.de}
+
+\newcommand{\docAusbildungsbetrieb}{Aesculap AG}
+\newcommand{\docStreetName}{Am Aesculap Platz}
+\newcommand{\docPostalCode}{78523}
+\newcommand{\docCity}{Tuttlingen}
+
 
 % Document data
-\newcommand{\docTitle}{NAME}
-\newcommand{\docSubTitle}{UNTERTITEL} % Leer lassen, wenn kein Untertitel
-\newcommand{\docType}{Projektarbeit}
-\newcommand{\docModule}{Plattform für Autonome Systeme}  % TOCHANGE muss man das hinschreiben?
-\newcommand{\docSupervisor}{BETREUER}
-\newcommand{\docCosupervisor}{KOBETREUER} % TOCHANGE supervisor or co-supervisor
-\newcommand{\docDeadline}{ABGABEDATUM} % TOCHANGE submission date
+\newcommand{\docTitle}{Average Speed}
+\newcommand{\docType}{Abschlussprüfung}
+\newcommand{\docDeadline}{17.06.2024}
+\newcommand{\docStudyProgram}{Mathematisch- Technischer Softwareentwickler}
+\newcommand{\docSubTitle}{Dokumentation zur Prüfungsaufgabe}
 
 
 
@@ -78,12 +78,17 @@
 ]{hyperref}
 
 
+\addto\extrasgerman{
+    \def\subsectionautorefname{Abschnitt}
+    \def\subsubsectionautorefname{Abschnitt}
+}
+
 
 % ##################################################
 % FONTS AND SPACING
 % ##################################################
 \renewcommand{\familydefault}{\sfdefault}   % default font
-\usepackage[onehalfspacing]{setspace}       % default 1.5 line spacing
+% \usepackage[onehalfspacing]{setspace}       % default 1.5 line spacing
 \raggedbottom   % don't stretch spacing to fit page length
 
 \usepackage{anyfontsize} % use any font size
@@ -105,7 +110,6 @@
 % ##################################################
 % Page layout / Seitenränder
 \usepackage[
-	bindingoffset=1.5cm,
 	inner=2.5cm,
 	outer=2.5cm,
 	top=3cm,
@@ -121,6 +125,8 @@
 \addtokomafont{pagehead}{\normalfont}   % use normal font for page header
 \ohead*{\thepage}                       % page number
 \ihead*{\leftmark}                      % chapter name
+
+\parskip1.5ex % Abstand zwischen Absätzen
 
 
 
@@ -157,8 +163,8 @@
 \usepackage{listings}
 \usepackage{beramono}   % use a typewriter font which supports bold characters
 
-\renewcommand{\lstlistlistingname}{List of Code Listings}   % 
-\renewcommand{\lstlistingname}{Code Listing}
+\renewcommand{\lstlistlistingname}{Liste der Codeblöcke}   % 
+\renewcommand{\lstlistingname}{Codeblock}
 \newcommand{\listoflolentryname}{\lstlistingname}   % prefix for List of Code Listings
 
 % define colors for source code highlighting
@@ -229,6 +235,8 @@
 % ##################################################
 \usepackage[printonlyused]{acronym}
 
+% \usepackage[toc]{glossaries}
+
 
 
 % ##################################################
@@ -272,5 +280,9 @@
 % ##################################################
 % MISC
 % ##################################################
+\usepackage{amsmath}
 % better referencing of images, tables, etc.
-\usepackage[nameinlink, noabbrev]{cleveref} 
+\usepackage[nameinlink, noabbrev]{cleveref}
+
+% appending pdfs
+\usepackage{pdfpages}

@@ -6,7 +6,7 @@
     listof=entryprefix,     % add entry name to figures, tables, etc.
     listof=nochaptergap,    % no chapter gap for figures, tables, etc.
     bibliography=totoc,     % add bibliography to ToC but without a chapter number
-    parskip=half            % half line spacing between paragraphs
+    oneside
 ]{scrbook}
 
 \input{preamble}                      % load preamble
@@ -19,7 +19,7 @@
 \frontmatter
 \pagenumbering{Roman}
 
-\include{framework/abstract}            % Abstract
+% \include{framework/abstract}            % Abstract
 \tableofcontents                        % Contents
 \listoffigures                          % List of Figures
 \listoftables                           % List of Tables
@@ -28,31 +28,29 @@
 
 % Content
 \mainmatter
-% Anfang
-\include{content/0_einleitung}
-\include{content/0_Grundlagen}
+
 % eigene Kapitel
 \include{content/1_Problemanalyse}
-\include{content/2_Tools}
-\include{content/3_Umsetzung}
-\include{content/4_Lern-Ergebnisse}
+\include{content/2_workflow}
+\include{content/3_Tools}
+\include{content/4_Lösungsansätze}
+\include{content/5_Softwarespezifikation}
+\include{content/6_Testkonzept}
+\include{content/7_Fazit}
 % Ende
-\include{content/99_Ausblick}
-\include{content/99_Fazit}
 
 % Bibliography
-\begin{singlespace}
-    \printbibliography
-\end{singlespace}
+\printbibliography
 
 % Declaration of Authorship (in German)
-\include{framework/declaration_of_authorship}   
+% \include{framework/declaration_of_authorship} 
+\includepdf[pages=-]{DeckblattReportMatse.pdf}
 
 % Appendices
 \appendix
 
 \begin{appendices}
-    % \include{appendix/CompleteCode}
+    \include{appendix/CompleteCode}
 \end{appendices}
 
 \end{document}
